@@ -18,6 +18,10 @@ Just for fun: Here I use `Py code #` instead of `R code #`, where `#` represents
 
 *Note*: Without the book, you won't learn anything, so no reason to keep on reading. I won't repeat the questions in the exercises, I won't give details on the PyCode boxes when things should be obvious. 
 
+## Other resources
+
+There are other code translations out there. Especially interesting is the code translation that can be found on the [PyMC3 github](https://github.com/pymc-devs/resources/tree/master/Rethinking_2). I am here and there drawing directly from their effort, however, decided to use [PyStan](https://github.com/stan-dev/pystan) where RStan is used in the book instead of trying to translate everything to PyMC3. 
+
 ## General notes
 
 This code translation assumes that you have some basic python knowledge. Otherwise, why go through the pain, use R.
@@ -27,7 +31,7 @@ R and Python have different bases, e.g., while command `log(2)` is a default com
 ## Pre-requisites
 Several standard python packages are used here. In order to install all the packages in your python environment, you can run the following command:
 
-    pip install numpy, sklearn, matplotlib, scipy, pandas, seaborn
+    pip install numpy, sklearn, matplotlib, scipy, pandas, seaborn, pymc3
 
 Imports will take place at the top of every Jupyter notebook and won't be repeated for clarity, however, I will try and use the default imports.
 
@@ -49,6 +53,10 @@ In general, for all arrays for mathematical operations, `np.arrays` will be used
 Pandas by now is the default package in python for handling and analyzing data. While often not required per se, it makes data and its analysis a lot easier. Pandas especially bring R-like data frames and other classes to python that are not natively available. For using pandas we will always import it in its default way:
 
     import pandas as pd
+
+### PyMC3
+
+A package for Bayesian data analysis in Python. Documentation available [here](https://docs.pymc.io/). They have a resource page as well that is used here (and referenced).
 
 ### seaborn
 Directly from their [website](https://seaborn.pydata.org/): "Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics."
